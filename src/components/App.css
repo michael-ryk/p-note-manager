@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+
+header {
+  background-color:rgb(255, 228, 138);
+  margin: auto;
+  padding: 5px;
+  box-shadow: 0 0 10px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #ccc;
+  width: 100%;
+}
