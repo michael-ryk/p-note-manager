@@ -13,7 +13,7 @@ function App() {
       <Header />
       <CreateNoteForm />
       {dummyNotes.map((item) => {
-        return <Note key={item.id}/>
+        return <Note key={item.id} {...item}/>
       })}
       <Footer />
     </div>

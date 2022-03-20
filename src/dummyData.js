@@ -7,22 +7,22 @@ const dummyNotes = [
     {
         id: 2,
         title: "Note2",
-        note: "Some note here"
+        note: "Another one"
     },
     {
         id: 3,
         title: "Note3",
-        note: "Some note here"
+        note: "More and more"
     },
     {
         id: 4,
         title: "Note4",
-        note: "Some note here"
+        note: "Notes is good"
     },
     {
         id: 5,
         title: "Note5",
-        note: "Some note here"
+        note: "Something special"
     }
 ];
 export default dummyNotes;
