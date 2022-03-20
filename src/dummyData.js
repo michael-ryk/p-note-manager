@@ -7,7 +7,7 @@ const dummyNotes = [
     {
         id: 2,
         title: "Note2",
-        note: "Another one"
+        note: "Ad qui dolor anim elit nisi sunt ea tempor enim qui nisi qui nisi. Anim mollit non reprehenderit amet veniam sit elit ut officia esse id commodo. Cillum irure proident amet velit fugiat pariatur ullamco."
     },
     {
         id: 3,
@@ -17,7 +17,7 @@ const dummyNotes = [
     {
         id: 4,
         title: "Note4",
-        note: "Notes is good"
+        note: "Ad qui dolor anim elit nisi sunt ea tempor enim qui nisi qui nisi. Anim mollit non"
     },
     {
         id: 5,

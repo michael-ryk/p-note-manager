@@ -12,9 +12,11 @@ function App() {
     <div className="App">
       <Header />
       <CreateNoteForm />
-      {dummyNotes.map((item) => {
-        return <Note key={item.id} {...item}/>
-      })}
+      <div className="container">
+        {dummyNotes.map((item) => {
+          return <Note key={item.id} {...item}/>
+        })}
+      </div>
       <Footer />
     </div>
   );
