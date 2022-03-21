@@ -16,6 +16,39 @@ header {
   text-align: left;
 }
 
+/* Create Note form*/
+form {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 15px 15px 50px;
+  margin: 20px auto ;
+  width: 500px;
+}
+
+form input, form textarea {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  outline: none;
+  font-size: 1em;
+  resize: none;
+}
+
+form button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background:rgb(255, 228, 138);
+  border: none;
+  border-radius: 15%;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Notes Show */
 .container {
   display: flex;
   justify-content: center;

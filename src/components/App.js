@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import CreateNoteForm from './CreateNoteForm';
@@ -8,12 +8,24 @@ import './App.css';
 
 
 function App() {
+
+  var [notes, setNotes] = useState([]);
+  notes = dummyNotes;
+
+  function addNote () {
+
+  }
+
+  function deleteNote () {
+    
+  }
+
   return (
     <div className="App">
       <Header />
       <CreateNoteForm />
       <div className="container">
-        {dummyNotes.map((item) => {
+        {notes.map((item) => {
           return <Note key={item.id} {...item}/>
         })}
       </div>
