@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CreateNoteForm />
+      <CreateNoteForm addNote={addNote}/>
       <div className="container">
         {notes.map((item) => {
           return <Note key={item.id} {...item}/>
