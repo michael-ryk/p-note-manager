@@ -78,6 +78,17 @@ form button {
   margin-bottom: 10px;
 }
 
+.note button {
+  background:rgb(255, 228, 138);
+  border: none;
+  border-radius: 15%;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Footer */
 footer {
   position: absolute;
   bottom: 0;
