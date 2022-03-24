@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 
-function CreateNoteForm(addNote) {
+function CreateNoteForm(props) {
   //New created note
-  const [note, setNote] = useState({ title: '', note: '' });
+  const [note, setNote] = useState({ id: '', title: '', note: '' });
 
   function onChange(e) {
     const { name, value } = e.target;
-    
+
     //append typed chars to title/note
     setNote((prev) => {
-      return {...prev , [name]: value};
+      return { ...prev, [name]: value };
     });
   }
 
   function submitNote(submitEvent) {
-    submitEvent.preventDefault(); // to prevent refresh of page
+    note.id = new Date().getTime().toString();  // Set unique id
+    props.addNote(note);                        // use addnote passed from props
+    setNote({ id: '', title: '', note: '' });   // clean current note object
+    submitEvent.preventDefault();               // to prevent refresh of page
   }
 
   return (

@@ -9,11 +9,14 @@ import './App.css';
 
 function App() {
 
-  var [notes, setNotes] = useState([]);
-  notes = dummyNotes;
+  var [notes, setNotes] = useState(dummyNotes);
 
-  function addNote () {
-
+  function addNote (singleNote) {
+    console.log(singleNote);
+    setNotes((prevNotes) => {
+      console.log(prevNotes);
+      return [...prevNotes, singleNote]
+    });
   }
 
   function deleteNote () {
